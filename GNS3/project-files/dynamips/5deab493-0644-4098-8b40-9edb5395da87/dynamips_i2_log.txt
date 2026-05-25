@@ -1,0 +1,14 @@
+Jul 20 11:37:43.400 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 20 11:37:43.401 HYPERVISOR: Started on IP = localhost, TCP port = 50673.
+Jul 20 11:37:43.887 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 20 11:37:43.889 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips 
+Jul 20 11:37:43.889 GENERAL: working_dir=D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips
+Jul 20 11:37:43.890 HYPERVISOR: exec_cmd: ethsw create LAN-B-12-Users 
+Jul 20 11:37:53.582 HYPERVISOR: exec_cmd: nio create_udp udp-50f57284-2389-489d-ae4c-8e81875781bd 10004 127.0.0.1 10005 
+Jul 20 11:37:53.582 HYPERVISOR: exec_cmd: ethsw add_nio LAN-B-12-Users udp-50f57284-2389-489d-ae4c-8e81875781bd 
+Jul 20 11:37:53.598 HYPERVISOR: exec_cmd: ethsw set_access_port LAN-B-12-Users udp-50f57284-2389-489d-ae4c-8e81875781bd 1 
+Jul 20 16:44:28.595 HYPERVISOR: exec_cmd: ethsw remove_nio LAN-B-12-Users udp-50f57284-2389-489d-ae4c-8e81875781bd 
+Jul 20 16:44:28.610 HYPERVISOR: exec_cmd: nio delete udp-50f57284-2389-489d-ae4c-8e81875781bd 
+Jul 20 16:44:35.581 HYPERVISOR: exec_cmd: nio create_udp udp-f71866e1-e3dd-4e4d-a8ac-753e629b2969 10005 127.0.0.1 10004 
+Jul 20 16:44:35.581 HYPERVISOR: exec_cmd: ethsw add_nio LAN-B-12-Users udp-f71866e1-e3dd-4e4d-a8ac-753e629b2969 
+Jul 20 16:44:35.596 HYPERVISOR: exec_cmd: ethsw set_access_port LAN-B-12-Users udp-f71866e1-e3dd-4e4d-a8ac-753e629b2969 1 

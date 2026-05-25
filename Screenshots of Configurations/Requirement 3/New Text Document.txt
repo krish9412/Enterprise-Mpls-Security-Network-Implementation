@@ -1,0 +1,130 @@
+1. EXEC (Head‑Office CE)
+Interfaces up/up
+
+cisco
+Copy
+Edit
+show ip interface brief | include FastEthernet0/1|Serial1/0
+Screenshot: both Serial1/0 (to NCL) and Fa0/1 (to HR LAN) should be “up up”.
+
+Static routes in place
+
+cisco
+Copy
+Edit
+show ip route 10.30.10.0
+show ip route 10.30.11.0
+Screenshot: two “S … via 10.10.50.2” entries.
+
+Basic ping to RND LAN B (unencrypted)
+
+cisco
+Copy
+Edit
+ping 10.30.11.2 source FastEthernet0/1
+Screenshot: “!!!!!” success.
+
+Basic ping to RND LAN A (encrypted)
+
+cisco
+Copy
+Edit
+ping 10.30.10.2 source FastEthernet0/1
+Screenshot: “!!!!!” success.
+
+IPSec SA for LAN A
+
+cisco
+Copy
+Edit
+clear crypto sa
+ping 10.30.10.2 source FastEthernet0/1
+show crypto isakmp sa
+show crypto ipsec sa
+Screenshot 1: show crypto isakmp sa with QM_IDLE to 10.10.50.2
+Screenshot 2: show crypto ipsec sa showing non‑zero pkts encaps/decaps.
+
+No IPSec SA for LAN B
+
+cisco
+Copy
+Edit
+clear crypto sa
+ping 10.30.11.2 source FastEthernet0/1
+show crypto isakmp sa
+show crypto ipsec sa
+Screenshot: both SA tables empty.
+
+2. NCL (Provider‑Edge CE)
+CE⇄CE link up/up
+
+cisco
+Copy
+Edit
+show ip interface brief | include FastEthernet2/0
+Screenshot: Fa2/0 “up up” with 10.30.20.1/30.
+
+Return route to EXEC LAN present
+
+cisco
+Copy
+Edit
+show ip route 10.20.10.0
+Screenshot: “S 10.20.10.0/24 … via 10.10.50.1”
+
+Ping EXEC
+
+cisco
+Copy
+Edit
+ping 10.10.50.1
+Screenshot: “!!!!!” success.
+
+3. RND (R&D‑CE)
+All three interfaces up/up
+
+cisco
+Copy
+Edit
+show ip interface brief | include FastEthernet0/0|FastEthernet0/1|FastEthernet2/0
+_Screenshot:
+
+Fa0/0 = 10.30.10.2/24 up/up
+
+Fa0/1 = 10.30.11.2/24 up/up
+
+Fa2/0 = 10.30.20.2/30 up/up_
+
+Return route to EXEC LAN
+
+cisco
+Copy
+Edit
+show ip route 10.20.10.0
+Screenshot: “S 10.20.10.0/24 … via 10.30.20.1”
+
+Ping NCL
+
+cisco
+Copy
+Edit
+ping 10.30.20.1
+Screenshot: “!!!!!” success.
+
+How to capture:
+
+Enter each command in your console.
+
+When the full output appears, use GNS3’s “Take Screenshot” (or identical) of only the console window.
+
+Label each image “REQ3‑Device‑Command” (e.g. REQ3‑EXEC‑PingLANA).
+
+Once you’ve collected all 10–12 screenshots above, you’ll have clear evidence that:
+
+The CE ↔ CE link is up.
+
+Both R&D subnets are reachable.
+
+Only LAN A traffic is carried over IPSec (QM_IDLE + packet counters), LAN B is not.
+
+That completes Requirement 3.

@@ -1,0 +1,14 @@
+Jul 04 14:48:52.208 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 04 14:48:52.209 HYPERVISOR: Started on IP = localhost, TCP port = 51144.
+Jul 04 14:48:52.697 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 04 14:48:52.699 HYPERVISOR: exec_cmd: hypervisor working_dir H:\Enterprise Network\KV6017\project-files\dynamips 
+Jul 04 14:48:52.699 GENERAL: working_dir=H:\Enterprise Network\KV6017\project-files\dynamips
+Jul 04 14:48:52.700 HYPERVISOR: exec_cmd: ethsw create Switch4 
+Jul 04 14:48:59.849 HYPERVISOR: exec_cmd: nio create_udp udp-dba4cd58-a5f5-4573-a511-470d8028d3c7 10031 127.0.0.1 10030 
+Jul 04 14:48:59.849 HYPERVISOR: exec_cmd: ethsw add_nio Switch4 udp-dba4cd58-a5f5-4573-a511-470d8028d3c7 
+Jul 04 14:48:59.856 HYPERVISOR: exec_cmd: ethsw set_access_port Switch4 udp-dba4cd58-a5f5-4573-a511-470d8028d3c7 1 
+Jul 04 15:06:02.389 HYPERVISOR: exec_cmd: ethsw rename Switch4 80-Users1 
+Jul 04 15:06:02.390 HYPERVISOR: exec_cmd: ethsw set_access_port 80-Users1 udp-dba4cd58-a5f5-4573-a511-470d8028d3c7 1 
+Jul 04 15:06:02.462 HYPERVISOR: exec_cmd: ethsw set_access_port 80-Users1 udp-dba4cd58-a5f5-4573-a511-470d8028d3c7 1 
+Jul 04 15:06:09.846 HYPERVISOR: exec_cmd: ethsw set_access_port 80-Users1 udp-dba4cd58-a5f5-4573-a511-470d8028d3c7 1 
+Jul 04 15:06:14.506 HYPERVISOR: exec_cmd: ethsw set_access_port 80-Users1 udp-dba4cd58-a5f5-4573-a511-470d8028d3c7 1 

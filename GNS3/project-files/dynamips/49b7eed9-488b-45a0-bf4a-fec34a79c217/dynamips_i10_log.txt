@@ -1,0 +1,40 @@
+Jul 11 14:43:00.582 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 11 14:43:00.583 HYPERVISOR: Started on IP = localhost, TCP port = 51114.
+Jul 11 14:43:01.064 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 11 14:43:01.065 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\krish\OneDrive\Enterprise Network\KV6017\project-files\dynamips 
+Jul 11 14:43:01.065 GENERAL: working_dir=C:\Users\krish\OneDrive\Enterprise Network\KV6017\project-files\dynamips
+Jul 11 14:43:01.065 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\krish\OneDrive\Enterprise Network\KV6017\project-files\dynamips\06768a36-c1a2-48f8-8df0-6b89a8214035 
+Jul 11 14:43:01.066 GENERAL: working_dir=C:\Users\krish\OneDrive\Enterprise Network\KV6017\project-files\dynamips\06768a36-c1a2-48f8-8df0-6b89a8214035
+Jul 11 14:43:01.066 HYPERVISOR: exec_cmd: vm create PRODUCTION-1 6 c3725 
+Jul 11 14:43:01.077 VM: VM PRODUCTION-1 created.
+Jul 11 14:43:01.079 HYPERVISOR: exec_cmd: vm set_con_tcp_port PRODUCTION-1 5026 
+Jul 11 14:43:01.079 HYPERVISOR: exec_cmd: c3725 get_mac_addr PRODUCTION-1 
+Jul 11 14:43:01.079 HYPERVISOR: exec_cmd: vm set_disk0 PRODUCTION-1 0 
+Jul 11 14:43:01.080 HYPERVISOR: exec_cmd: vm set_exec_area PRODUCTION-1 64 
+Jul 11 14:43:01.080 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-1 
+Jul 11 14:43:01.080 HYPERVISOR: exec_cmd: vm set_idle_pc PRODUCTION-1 0x60bf8ba0 
+Jul 11 14:43:01.082 HYPERVISOR: exec_cmd: vm set_ios PRODUCTION-1 C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 11 14:43:01.083 HYPERVISOR: exec_cmd: c3725 set_mac_addr PRODUCTION-1 c206.1b3c.0000 
+Jul 11 14:43:01.083 HYPERVISOR: exec_cmd: vm set_nvram PRODUCTION-1 256 
+Jul 11 14:43:01.084 HYPERVISOR: exec_cmd: vm set_ram PRODUCTION-1 256 
+Jul 11 14:43:01.084 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-1 
+Jul 11 14:43:01.084 HYPERVISOR: exec_cmd: vm slot_add_binding PRODUCTION-1 1 0 NM-4T 
+Jul 11 14:43:01.085 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-1 
+Jul 11 14:43:01.085 HYPERVISOR: exec_cmd: vm slot_add_binding PRODUCTION-1 2 0 NM-1FE-TX 
+Jul 11 14:43:01.086 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-1 
+Jul 11 14:43:01.086 HYPERVISOR: exec_cmd: vm slot_add_binding PRODUCTION-1 0 16 WIC-2T 
+Jul 11 14:43:01.086 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-1 
+Jul 11 14:43:01.086 HYPERVISOR: exec_cmd: vm slot_add_binding PRODUCTION-1 0 32 WIC-2T 
+Jul 11 14:43:07.998 HYPERVISOR: exec_cmd: nio create_udp udp-e62df087-f6f7-45b9-98e1-6d57294b3191 10038 127.0.0.1 10039 
+Jul 11 14:43:08.284 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PRODUCTION-1 0 0 udp-e62df087-f6f7-45b9-98e1-6d57294b3191 
+Jul 11 14:43:08.285 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-1 
+Jul 11 14:43:08.350 HYPERVISOR: exec_cmd: nio create_udp udp-1d5408b9-5c97-4f07-93e3-3ab89226b27b 10042 127.0.0.1 10043 
+Jul 11 14:43:08.354 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PRODUCTION-1 0 1 udp-1d5408b9-5c97-4f07-93e3-3ab89226b27b 
+Jul 11 14:43:08.354 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-1 
+Jul 11 15:19:02.986 HYPERVISOR: exec_cmd: vm set_ghost_status PRODUCTION-1 2 
+Jul 11 15:19:02.998 HYPERVISOR: exec_cmd: vm set_ghost_file PRODUCTION-1 C:\Users\krish\OneDrive\Enterprise Network\KV6017\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 11 15:19:02.999 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-1 
+Jul 11 15:19:03.012 HYPERVISOR: exec_cmd: vm set_config PRODUCTION-1 configs\i6_startup-config.cfg 
+Jul 11 15:19:03.013 HYPERVISOR: exec_cmd: vm start PRODUCTION-1 
+Jul 11 15:19:33.384 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-1 
+Jul 11 15:19:33.392 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-1 

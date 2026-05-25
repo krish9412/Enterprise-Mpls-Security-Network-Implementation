@@ -1,0 +1,104 @@
+Jul 20 11:37:45.127 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 20 11:37:45.127 HYPERVISOR: Started on IP = localhost, TCP port = 50682.
+Jul 20 11:37:45.613 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 20 11:37:45.614 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips 
+Jul 20 11:37:45.614 GENERAL: working_dir=D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips
+Jul 20 11:37:45.615 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\41948452-5513-49cf-bb15-a3f54756352c 
+Jul 20 11:37:45.615 GENERAL: working_dir=D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\41948452-5513-49cf-bb15-a3f54756352c
+Jul 20 11:37:45.616 HYPERVISOR: exec_cmd: vm create PRODUCTION-2 3 c3725 
+Jul 20 11:37:45.618 VM: VM PRODUCTION-2 created.
+Jul 20 11:37:45.619 HYPERVISOR: exec_cmd: vm set_con_tcp_port PRODUCTION-2 5006 
+Jul 20 11:37:45.619 HYPERVISOR: exec_cmd: c3725 get_mac_addr PRODUCTION-2 
+Jul 20 11:37:45.620 HYPERVISOR: exec_cmd: vm set_disk0 PRODUCTION-2 0 
+Jul 20 11:37:45.622 HYPERVISOR: exec_cmd: vm set_exec_area PRODUCTION-2 64 
+Jul 20 11:37:45.623 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 11:37:45.623 HYPERVISOR: exec_cmd: vm set_idle_pc PRODUCTION-2 0x60bf8ba0 
+Jul 20 11:37:45.626 HYPERVISOR: exec_cmd: vm set_ios PRODUCTION-2 C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 20 11:37:45.627 HYPERVISOR: exec_cmd: c3725 set_mac_addr PRODUCTION-2 c203.1164.0000 
+Jul 20 11:37:45.628 HYPERVISOR: exec_cmd: vm set_nvram PRODUCTION-2 256 
+Jul 20 11:37:45.629 HYPERVISOR: exec_cmd: vm set_ram PRODUCTION-2 256 
+Jul 20 11:37:45.630 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 11:37:45.630 HYPERVISOR: exec_cmd: vm slot_add_binding PRODUCTION-2 1 0 NM-4T 
+Jul 20 11:37:45.632 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 11:37:45.632 HYPERVISOR: exec_cmd: vm slot_add_binding PRODUCTION-2 2 0 NM-1FE-TX 
+Jul 20 11:37:45.633 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 11:37:45.633 HYPERVISOR: exec_cmd: vm slot_add_binding PRODUCTION-2 0 16 WIC-2T 
+Jul 20 11:37:45.634 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 11:37:45.635 HYPERVISOR: exec_cmd: vm slot_add_binding PRODUCTION-2 0 32 WIC-2T 
+Jul 20 11:37:53.658 HYPERVISOR: exec_cmd: nio create_udp udp-5e11871d-9d52-4688-af85-79e87b4f3f9e 10010 127.0.0.1 10011 
+Jul 20 11:37:53.917 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PRODUCTION-2 0 0 udp-5e11871d-9d52-4688-af85-79e87b4f3f9e 
+Jul 20 11:37:53.918 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 11:37:54.230 HYPERVISOR: exec_cmd: nio create_udp udp-b7f073d8-23d5-4bf5-924f-c7036057e453 10016 127.0.0.1 10017 
+Jul 20 11:37:54.232 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PRODUCTION-2 0 1 udp-b7f073d8-23d5-4bf5-924f-c7036057e453 
+Jul 20 11:37:54.233 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 11:38:06.121 HYPERVISOR: exec_cmd: vm set_ghost_status PRODUCTION-2 2 
+Jul 20 11:38:06.128 HYPERVISOR: exec_cmd: vm set_ghost_file PRODUCTION-2 D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 20 11:38:06.129 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 11:38:06.140 HYPERVISOR: exec_cmd: vm set_config PRODUCTION-2 configs\i3_startup-config.cfg 
+Jul 20 11:38:06.140 HYPERVISOR: exec_cmd: vm start PRODUCTION-2 
+Jul 20 11:38:36.431 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 20 11:38:36.445 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 20 13:50:20.399 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 13:50:20.399 HYPERVISOR: exec_cmd: vm slot_disable_nio PRODUCTION-2 0 0 
+Jul 20 13:50:20.411 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding PRODUCTION-2 0 0 
+Jul 20 13:50:20.412 HYPERVISOR: exec_cmd: nio delete udp-5e11871d-9d52-4688-af85-79e87b4f3f9e 
+Jul 20 13:52:00.135 HYPERVISOR: exec_cmd: nio create_udp udp-56a8c282-2b63-4634-af6a-5389198a97e2 10010 127.0.0.1 10011 
+Jul 20 13:52:00.138 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PRODUCTION-2 0 0 udp-56a8c282-2b63-4634-af6a-5389198a97e2 
+Jul 20 13:52:00.138 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 13:52:00.138 HYPERVISOR: exec_cmd: vm slot_enable_nio PRODUCTION-2 0 0 
+Jul 20 13:52:43.684 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 13:52:43.685 HYPERVISOR: exec_cmd: vm slot_disable_nio PRODUCTION-2 0 0 
+Jul 20 13:52:43.703 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding PRODUCTION-2 0 0 
+Jul 20 13:52:43.704 HYPERVISOR: exec_cmd: nio delete udp-56a8c282-2b63-4634-af6a-5389198a97e2 
+Jul 20 13:53:29.474 HYPERVISOR: exec_cmd: nio create_udp udp-8d614ebc-5a0e-4dc8-aa9c-160815805797 10080 127.0.0.1 10081 
+Jul 20 13:53:29.477 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PRODUCTION-2 0 0 udp-8d614ebc-5a0e-4dc8-aa9c-160815805797 
+Jul 20 13:53:29.477 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 13:53:29.477 HYPERVISOR: exec_cmd: vm slot_enable_nio PRODUCTION-2 0 0 
+Jul 20 13:55:01.279 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 13:55:01.280 HYPERVISOR: exec_cmd: vm stop PRODUCTION-2 
+Jul 20 13:55:01.439 VM: VM PRODUCTION-2 shutdown.
+Jul 20 13:55:01.440 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 20 13:55:20.303 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 13:55:20.304 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding PRODUCTION-2 0 0 
+Jul 20 13:55:20.305 HYPERVISOR: exec_cmd: nio delete udp-8d614ebc-5a0e-4dc8-aa9c-160815805797 
+Jul 20 13:55:56.654 HYPERVISOR: exec_cmd: nio create_udp udp-91611047-e76b-4614-9d37-13f4eff6cfb0 10086 127.0.0.1 10087 
+Jul 20 13:55:56.657 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PRODUCTION-2 0 0 udp-91611047-e76b-4614-9d37-13f4eff6cfb0 
+Jul 20 13:55:56.657 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 13:56:07.345 HYPERVISOR: exec_cmd: vm set_ghost_status PRODUCTION-2 2 
+Jul 20 13:56:07.346 HYPERVISOR: exec_cmd: vm set_ghost_file PRODUCTION-2 D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 20 13:56:07.347 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 13:56:07.355 HYPERVISOR: exec_cmd: vm set_config PRODUCTION-2 configs\i3_startup-config.cfg 
+Jul 20 13:56:07.355 HYPERVISOR: exec_cmd: vm start PRODUCTION-2 
+Jul 20 13:56:37.654 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 20 13:56:37.667 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 20 14:16:51.867 HYPERVISOR: exec_cmd: vm set_ghost_status PRODUCTION-2 2 
+Jul 20 14:16:51.868 HYPERVISOR: exec_cmd: vm set_ghost_file PRODUCTION-2 D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 20 14:16:51.869 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 14:20:39.480 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 14:20:39.481 HYPERVISOR: exec_cmd: vm suspend PRODUCTION-2 
+Jul 20 14:20:43.464 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 14:20:43.465 HYPERVISOR: exec_cmd: vm stop PRODUCTION-2 
+Jul 20 14:20:43.672 VM: VM PRODUCTION-2 shutdown.
+Jul 20 14:20:43.674 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 20 14:21:12.088 HYPERVISOR: exec_cmd: vm set_ghost_status PRODUCTION-2 2 
+Jul 20 14:21:12.090 HYPERVISOR: exec_cmd: vm set_ghost_file PRODUCTION-2 D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 20 14:21:12.091 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 20 14:21:12.100 HYPERVISOR: exec_cmd: vm set_config PRODUCTION-2 configs\i3_startup-config.cfg 
+Jul 20 14:21:12.100 HYPERVISOR: exec_cmd: vm start PRODUCTION-2 
+Jul 20 14:21:42.423 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 20 14:21:42.431 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 20 20:57:42.761 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 20 20:57:42.771 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 21 00:17:39.494 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 21 00:17:39.495 HYPERVISOR: exec_cmd: vm stop PRODUCTION-2 
+Jul 21 00:17:39.659 VM: VM PRODUCTION-2 shutdown.
+Jul 21 00:17:39.660 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 21 00:17:43.882 HYPERVISOR: exec_cmd: vm set_ghost_status PRODUCTION-2 2 
+Jul 21 00:17:43.891 HYPERVISOR: exec_cmd: vm set_ghost_file PRODUCTION-2 D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 21 00:17:43.891 HYPERVISOR: exec_cmd: vm get_status PRODUCTION-2 
+Jul 21 00:17:43.901 HYPERVISOR: exec_cmd: vm set_config PRODUCTION-2 configs\i3_startup-config.cfg 
+Jul 21 00:17:43.901 HYPERVISOR: exec_cmd: vm start PRODUCTION-2 
+Jul 21 00:18:14.193 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 21 00:18:14.203 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 21 01:22:14.700 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 
+Jul 21 01:22:14.713 HYPERVISOR: exec_cmd: vm extract_config PRODUCTION-2 

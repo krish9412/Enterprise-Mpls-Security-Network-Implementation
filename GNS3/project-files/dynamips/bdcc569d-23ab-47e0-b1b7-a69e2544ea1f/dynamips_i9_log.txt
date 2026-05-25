@@ -1,0 +1,81 @@
+Jul 04 14:48:52.791 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 04 14:48:52.792 HYPERVISOR: Started on IP = localhost, TCP port = 51147.
+Jul 04 14:48:53.276 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 04 14:48:53.277 HYPERVISOR: exec_cmd: hypervisor working_dir H:\Enterprise Network\KV6017\project-files\dynamips 
+Jul 04 14:48:53.277 GENERAL: working_dir=H:\Enterprise Network\KV6017\project-files\dynamips
+Jul 04 14:48:53.277 HYPERVISOR: exec_cmd: hypervisor working_dir H:\Enterprise Network\KV6017\project-files\dynamips\4ce5db9a-f27e-4305-9089-def42d004b59 
+Jul 04 14:48:53.277 GENERAL: working_dir=H:\Enterprise Network\KV6017\project-files\dynamips\4ce5db9a-f27e-4305-9089-def42d004b59
+Jul 04 14:48:53.277 HYPERVISOR: exec_cmd: vm create R5 5 c3725 
+Jul 04 14:48:53.279 VM: VM R5 created.
+Jul 04 14:48:53.279 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5008 
+Jul 04 14:48:53.279 HYPERVISOR: exec_cmd: c3725 get_mac_addr R5 
+Jul 04 14:48:53.280 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Jul 04 14:48:53.280 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Jul 04 14:48:53.280 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 14:48:53.280 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60bf8ba0 
+Jul 04 14:48:53.281 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 04 14:48:53.282 HYPERVISOR: exec_cmd: c3725 set_mac_addr R5 c205.0bb8.0000 
+Jul 04 14:48:53.282 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Jul 04 14:48:53.283 HYPERVISOR: exec_cmd: vm set_ram R5 256 
+Jul 04 14:48:53.283 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 14:48:53.283 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-4T 
+Jul 04 14:48:53.284 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 14:48:53.284 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 NM-1FE-TX 
+Jul 04 14:48:53.284 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 14:48:53.285 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 16 WIC-2T 
+Jul 04 14:48:53.285 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 14:48:53.285 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 32 WIC-2T 
+Jul 04 14:49:01.020 HYPERVISOR: exec_cmd: nio create_udp udp-d19598f9-21fb-46cc-a130-96e24a8683f1 10062 127.0.0.1 10063 
+Jul 04 14:49:01.282 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-d19598f9-21fb-46cc-a130-96e24a8683f1 
+Jul 04 14:49:01.283 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 15:01:17.542 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 15:01:17.543 HYPERVISOR: exec_cmd: vm extract_config R5 
+Jul 04 15:01:20.895 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Jul 04 15:01:20.896 HYPERVISOR: exec_cmd: vm set_ghost_file R5 H:\Enterprise Network\KV6017\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 04 15:01:20.897 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 15:01:20.913 HYPERVISOR: exec_cmd: vm set_config R5 configs\i5_startup-config.cfg 
+Jul 04 15:01:20.914 HYPERVISOR: exec_cmd: vm start R5 
+Jul 04 15:01:51.300 HYPERVISOR: exec_cmd: vm extract_config R5 
+Jul 04 15:01:51.319 HYPERVISOR: exec_cmd: vm extract_config R5 
+Jul 04 15:02:51.826 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 04 15:02:55.129 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 04 15:02:56.293 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 04 15:03:08.919 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 15:03:08.920 HYPERVISOR: exec_cmd: vm suspend R5 
+Jul 04 15:03:12.715 HYPERVISOR: exec_cmd: vm get_status R5 
+Jul 04 15:03:12.715 HYPERVISOR: exec_cmd: vm stop R5 
+Jul 04 15:03:12.830 VM: VM R5 shutdown.
+Jul 04 15:03:12.831 HYPERVISOR: exec_cmd: vm extract_config R5 
+Jul 04 15:03:23.699 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 04 15:03:23.699 HYPERVISOR: exec_cmd: vm rename R5 LDS 
+Jul 04 15:03:23.793 HYPERVISOR: exec_cmd: vm set_ios LDS C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 04 15:03:27.705 HYPERVISOR: exec_cmd: vm set_ios LDS C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 04 15:03:30.445 HYPERVISOR: exec_cmd: vm set_ios LDS C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 04 15:03:32.247 HYPERVISOR: exec_cmd: vm set_ios LDS C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 04 15:15:09.968 HYPERVISOR: exec_cmd: vm set_ghost_status LDS 2 
+Jul 04 15:15:09.969 HYPERVISOR: exec_cmd: vm set_ghost_file LDS H:\Enterprise Network\KV6017\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 04 15:15:09.969 HYPERVISOR: exec_cmd: vm get_status LDS 
+Jul 04 15:15:09.977 HYPERVISOR: exec_cmd: vm set_config LDS configs\i5_startup-config.cfg 
+Jul 04 15:15:09.978 HYPERVISOR: exec_cmd: vm start LDS 
+Jul 04 15:15:40.348 HYPERVISOR: exec_cmd: vm extract_config LDS 
+Jul 04 15:15:40.362 HYPERVISOR: exec_cmd: vm extract_config LDS 
+Jul 04 16:27:14.421 HYPERVISOR: exec_cmd: vm set_ghost_status LDS 2 
+Jul 04 16:27:14.422 HYPERVISOR: exec_cmd: vm set_ghost_file LDS H:\Enterprise Network\KV6017\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 04 16:27:14.423 HYPERVISOR: exec_cmd: vm get_status LDS 
+Jul 04 17:38:36.478 HYPERVISOR: exec_cmd: vm set_ghost_status LDS 2 
+Jul 04 17:38:36.479 HYPERVISOR: exec_cmd: vm set_ghost_file LDS H:\Enterprise Network\KV6017\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 04 17:38:36.480 HYPERVISOR: exec_cmd: vm get_status LDS 
+Jul 04 17:38:59.112 HYPERVISOR: exec_cmd: vm get_status LDS 
+Jul 04 17:38:59.112 HYPERVISOR: exec_cmd: vm stop LDS 
+Jul 04 17:38:59.221 VM: VM LDS shutdown.
+Jul 04 17:38:59.222 HYPERVISOR: exec_cmd: vm extract_config LDS 
+Jul 04 17:39:33.977 HYPERVISOR: exec_cmd: vm set_ghost_status LDS 2 
+Jul 04 17:39:33.978 HYPERVISOR: exec_cmd: vm set_ghost_file LDS H:\Enterprise Network\KV6017\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 04 17:39:33.978 HYPERVISOR: exec_cmd: vm get_status LDS 
+Jul 04 17:39:33.986 HYPERVISOR: exec_cmd: vm set_config LDS configs\i5_startup-config.cfg 
+Jul 04 17:39:33.986 HYPERVISOR: exec_cmd: vm start LDS 
+Jul 04 17:40:04.343 HYPERVISOR: exec_cmd: vm extract_config LDS 
+Jul 04 17:40:04.357 HYPERVISOR: exec_cmd: vm extract_config LDS 
+Jul 04 18:06:08.051 HYPERVISOR: exec_cmd: vm set_ghost_status LDS 2 
+Jul 04 18:06:08.052 HYPERVISOR: exec_cmd: vm set_ghost_file LDS H:\Enterprise Network\KV6017\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 04 18:06:08.053 HYPERVISOR: exec_cmd: vm get_status LDS 

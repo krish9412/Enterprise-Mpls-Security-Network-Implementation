@@ -1,0 +1,96 @@
+Jul 20 11:37:46.257 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 20 11:37:46.258 HYPERVISOR: Started on IP = localhost, TCP port = 50688.
+Jul 20 11:37:46.739 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 20 11:37:46.740 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips 
+Jul 20 11:37:46.740 GENERAL: working_dir=D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips
+Jul 20 11:37:46.740 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\80b22a37-ab28-4483-aba0-d33506853917 
+Jul 20 11:37:46.740 GENERAL: working_dir=D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\80b22a37-ab28-4483-aba0-d33506853917
+Jul 20 11:37:46.742 HYPERVISOR: exec_cmd: vm create LOGISTICS 4 c3725 
+Jul 20 11:37:46.743 VM: VM LOGISTICS created.
+Jul 20 11:37:46.743 HYPERVISOR: exec_cmd: vm set_con_tcp_port LOGISTICS 5008 
+Jul 20 11:37:46.743 HYPERVISOR: exec_cmd: c3725 get_mac_addr LOGISTICS 
+Jul 20 11:37:46.744 HYPERVISOR: exec_cmd: vm set_disk0 LOGISTICS 0 
+Jul 20 11:37:46.745 HYPERVISOR: exec_cmd: vm set_exec_area LOGISTICS 64 
+Jul 20 11:37:46.745 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 11:37:46.746 HYPERVISOR: exec_cmd: vm set_idle_pc LOGISTICS 0x60bf8ba0 
+Jul 20 11:37:46.747 HYPERVISOR: exec_cmd: vm set_ios LOGISTICS C:/Users/krish/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 20 11:37:46.748 HYPERVISOR: exec_cmd: c3725 set_mac_addr LOGISTICS c204.2410.0000 
+Jul 20 11:37:46.748 HYPERVISOR: exec_cmd: vm set_nvram LOGISTICS 256 
+Jul 20 11:37:46.749 HYPERVISOR: exec_cmd: vm set_ram LOGISTICS 256 
+Jul 20 11:37:46.750 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 11:37:46.750 HYPERVISOR: exec_cmd: vm slot_add_binding LOGISTICS 1 0 NM-4T 
+Jul 20 11:37:46.750 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 11:37:46.750 HYPERVISOR: exec_cmd: vm slot_add_binding LOGISTICS 2 0 NM-1FE-TX 
+Jul 20 11:37:46.751 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 11:37:46.751 HYPERVISOR: exec_cmd: vm slot_add_binding LOGISTICS 0 16 WIC-2T 
+Jul 20 11:37:46.751 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 11:37:46.751 HYPERVISOR: exec_cmd: vm slot_add_binding LOGISTICS 0 32 WIC-2T 
+Jul 20 11:37:54.300 HYPERVISOR: exec_cmd: nio create_udp udp-496b4f35-5863-41f2-9a09-0e80b18431fd 10020 127.0.0.1 10021 
+Jul 20 11:37:54.564 HYPERVISOR: exec_cmd: vm slot_add_nio_binding LOGISTICS 0 1 udp-496b4f35-5863-41f2-9a09-0e80b18431fd 
+Jul 20 11:37:54.565 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 11:37:56.790 HYPERVISOR: exec_cmd: nio create_udp udp-94417b22-7c50-46ca-a736-33aea944055c 10074 127.0.0.1 10075 
+Jul 20 11:37:56.793 HYPERVISOR: exec_cmd: vm slot_add_nio_binding LOGISTICS 0 0 udp-94417b22-7c50-46ca-a736-33aea944055c 
+Jul 20 11:37:56.793 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 11:38:06.436 HYPERVISOR: exec_cmd: vm set_ghost_status LOGISTICS 2 
+Jul 20 11:38:06.436 HYPERVISOR: exec_cmd: vm set_ghost_file LOGISTICS D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 20 11:38:06.437 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 11:38:06.444 HYPERVISOR: exec_cmd: vm set_config LOGISTICS configs\i4_startup-config.cfg 
+Jul 20 11:38:06.447 HYPERVISOR: exec_cmd: vm start LOGISTICS 
+Jul 20 11:38:36.791 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 11:38:36.806 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 13:04:07.333 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 13:04:07.343 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 13:40:07.591 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 13:40:07.601 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 13:50:20.553 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 13:50:20.553 HYPERVISOR: exec_cmd: vm slot_disable_nio LOGISTICS 0 0 
+Jul 20 13:50:20.565 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding LOGISTICS 0 0 
+Jul 20 13:50:20.566 HYPERVISOR: exec_cmd: nio delete udp-94417b22-7c50-46ca-a736-33aea944055c 
+Jul 20 13:53:24.735 HYPERVISOR: exec_cmd: nio create_udp udp-a20010b8-66ea-4a5e-809d-3c0089de4111 10074 127.0.0.1 10075 
+Jul 20 13:53:24.737 HYPERVISOR: exec_cmd: vm slot_add_nio_binding LOGISTICS 0 0 udp-a20010b8-66ea-4a5e-809d-3c0089de4111 
+Jul 20 13:53:24.738 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 13:53:24.738 HYPERVISOR: exec_cmd: vm slot_enable_nio LOGISTICS 0 0 
+Jul 20 13:55:01.282 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 13:55:01.282 HYPERVISOR: exec_cmd: vm stop LOGISTICS 
+Jul 20 13:55:01.430 VM: VM LOGISTICS shutdown.
+Jul 20 13:55:01.431 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 13:56:07.356 HYPERVISOR: exec_cmd: vm set_ghost_status LOGISTICS 2 
+Jul 20 13:56:07.357 HYPERVISOR: exec_cmd: vm set_ghost_file LOGISTICS D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 20 13:56:07.357 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 13:56:07.365 HYPERVISOR: exec_cmd: vm set_config LOGISTICS configs\i4_startup-config.cfg 
+Jul 20 13:56:07.365 HYPERVISOR: exec_cmd: vm start LOGISTICS 
+Jul 20 13:56:37.655 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 13:56:37.667 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 14:16:51.871 HYPERVISOR: exec_cmd: vm set_ghost_status LOGISTICS 2 
+Jul 20 14:16:51.872 HYPERVISOR: exec_cmd: vm set_ghost_file LOGISTICS D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 20 14:16:51.873 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 14:20:39.483 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 14:20:39.485 HYPERVISOR: exec_cmd: vm suspend LOGISTICS 
+Jul 20 14:20:43.466 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 14:20:43.466 HYPERVISOR: exec_cmd: vm stop LOGISTICS 
+Jul 20 14:20:43.603 VM: VM LOGISTICS shutdown.
+Jul 20 14:20:43.604 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 14:21:12.101 HYPERVISOR: exec_cmd: vm set_ghost_status LOGISTICS 2 
+Jul 20 14:21:12.101 HYPERVISOR: exec_cmd: vm set_ghost_file LOGISTICS D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 20 14:21:12.102 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 20 14:21:12.111 HYPERVISOR: exec_cmd: vm set_config LOGISTICS configs\i4_startup-config.cfg 
+Jul 20 14:21:12.111 HYPERVISOR: exec_cmd: vm start LOGISTICS 
+Jul 20 14:21:42.382 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 14:21:42.394 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 14:31:42.387 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 14:31:42.396 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 20:54:12.754 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 20 20:54:12.770 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 21 00:17:39.496 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 21 00:17:39.496 HYPERVISOR: exec_cmd: vm stop LOGISTICS 
+Jul 21 00:17:39.651 VM: VM LOGISTICS shutdown.
+Jul 21 00:17:39.653 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 21 00:17:43.902 HYPERVISOR: exec_cmd: vm set_ghost_status LOGISTICS 2 
+Jul 21 00:17:43.903 HYPERVISOR: exec_cmd: vm set_ghost_file LOGISTICS D:\Enterprise Network\KV6017\KV6017-1\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-256.ghost 
+Jul 21 00:17:43.903 HYPERVISOR: exec_cmd: vm get_status LOGISTICS 
+Jul 21 00:17:43.913 HYPERVISOR: exec_cmd: vm set_config LOGISTICS configs\i4_startup-config.cfg 
+Jul 21 00:17:43.913 HYPERVISOR: exec_cmd: vm start LOGISTICS 
+Jul 21 00:18:14.193 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 21 00:18:14.203 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 21 01:21:44.714 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 
+Jul 21 01:21:44.723 HYPERVISOR: exec_cmd: vm extract_config LOGISTICS 

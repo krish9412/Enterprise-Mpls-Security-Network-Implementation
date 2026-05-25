@@ -1,0 +1,9 @@
+Jul 03 15:45:04.549 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 03 15:45:04.550 HYPERVISOR: Started on IP = localhost, TCP port = 53925.
+Jul 03 15:45:05.026 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 03 15:45:05.027 HYPERVISOR: exec_cmd: hypervisor working_dir H:\Enterprise Network\KV6017\project-files\dynamips 
+Jul 03 15:45:05.027 GENERAL: working_dir=H:\Enterprise Network\KV6017\project-files\dynamips
+Jul 03 15:45:05.027 HYPERVISOR: exec_cmd: ethsw create Switch2 
+Jul 03 15:45:14.153 HYPERVISOR: exec_cmd: nio create_udp udp-aa09e0fb-30dd-4d9d-b0d7-b4b4445f80e6 10004 127.0.0.1 10005 
+Jul 03 15:45:14.154 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-aa09e0fb-30dd-4d9d-b0d7-b4b4445f80e6 
+Jul 03 15:45:14.162 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-aa09e0fb-30dd-4d9d-b0d7-b4b4445f80e6 1 
